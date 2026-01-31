@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innoAIvators-contact</title>
+
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="stylecontact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">  <!-- altered -->
+  <source src="innoaivators.mp4" type="video/mp4">  <!-- altered -->
+  Your browser does not support HTML5 video.
+</video>
+
+
+    <nav class="navbar">
+        <h1>innoAIvators</h1>
+        <div class="navbarlinks">
+            <p class="navbarlink"><a href="index.html">Home</a></p>
+            <p class="navbarlink"><a href="">About</a></p>
+            <p class="navbarlink"><a href="services.html">Services</a></p>
+            <p class="navbarlink"><a href="">Demos</a></p>
+            <p class="navbarlink"><a href="">Members</a></p>
+            <p class="navbarlink"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbarmenutoogle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="sidenavbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="sidenavbarlinks">
+            <p class="sidenavbarlink"><a href="index.html">Home</a></p>
+            <p class="sidenavbarlink"><a href="">About</a></p>
+            <p class="sidenavbarlink"><a href="services.html">Services</a></p>
+            <p class="sidenavbarlink"><a href="">Demos</a></p>
+            <p class="sidenavbarlink"><a href="">Members</a></p> 
+            <p class="sidenavbarlink"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+
+
+
+   
+
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <h2>Get In Touch </h2>
+    <h3>We'd love to hear from you. Send us your details.</h3>
+    
+    <input type="hidden" name="access_key" value="9fd95c62-0097-4b10-8eb5-03cb114d7ae5">
+
+    <div class="namegroup">
+    <div class="form-group">
+      <label for="first-name" >First Name</label>
+      <input type="text" name="first_name" id="first-name" placeholder="&#128100; Enter your first name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Last Name</label>
+      <input type="text" name="last_name" id="last-name" placeholder="&#128100; Enter your last name" required>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" placeholder="&#128231; your.email@example.com" required>
+    </div>
+
+    <div class="namegroup">
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" placeholder="&#128222; +1 (555) 123-4567">
+    </div>
+
+    <div class="form-group">
+      <label for="company">Company</label>
+      <input type="text" name="company" id="company" placeholder="&#127970; Your company name">
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label for="Schclgname">School/College</label>
+      <input type="text" name="Schclgname" id="Schclgname" placeholder="&#127760; Your institute name if ur a student" required>
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Select your wanted service</label>
+      <select name="service" id="service" required>
+        <option value="Nothing">Select your wanted service</option>
+        <option value="App / Web Development">App / Web Development</option>
+        <option value="UI/UX & Figma Designs">UI/UX & Figma Designs</option>
+        <option value="Generative AI building">Generative AI building</option>
+        <option value="Attractive Dashboards (PowerBI)">Attractive Dashboards (PowerBI)</option>
+        <option value="AI/ML projects">AI/ML projects</option>
+        <option value="IoT projects">IoT projects</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Tell us about your inquiry..."></textarea>
+    </div>
+
+    <div class="checkbox-group">
+      <input  type="checkbox" name="updates" id="updates" required>
+      <label for="updates">Accept Terms and Conditions</label>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+    <script src="index.js"></script>
+
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
